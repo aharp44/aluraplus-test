@@ -1,0 +1,188 @@
+:root{
+    --white: white;
+    --gray: rgb(165, 165, 165);
+    --blue-background: rgba(0,3,12,255);
+    --blue-button: rgba(53,124,251,255);
+    --invisible: rgba(0,0,0,0);
+
+}
+
+body{
+    color: var(--white);
+    background-color: var(--blue-background);
+    margin:0px;
+}
+
+*{  
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+    margin:0;
+
+    /* REMOVER TUDO ABAIXO */
+
+    /* border-width: 1px;
+    border-style: solid;
+    border-color:rgba(255, 255, 255, 0.164);
+    padding:5px; */
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+}
+
+/* ================================== INTRO ================================== */
+.intro{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows;
+    text-align:center;
+    background-image:url(https://raw.githubusercontent.com/alura-cursos/aluraplus/aula04/img/Background.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    height:600px;
+    padding: 100px 5%;
+}
+
+.intro-combo{
+    margin: 1.5rem 0;
+}
+
+.btn{
+    display:flex;
+    color: var(--white);
+    background-color: var(--blue-button);
+    height:3rem;
+    text-decoration: none;
+    justify-content:center;
+    align-items: center;
+    margin:.8rem;
+    border-radius: 8px;
+}
+
+.btn2{
+    background-color:var(--invisible);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.intro-p{
+    color: var(--gray);
+    font-size:0.7rem;
+}
+
+
+/* ================================== MEIO ================================== */
+.meio{
+    display:grid;
+    padding: 100px 5%;
+}
+
+.meio-txt{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meio-h1{
+    font-size: 2.5rem;
+    margin-bottom:5px;
+}
+
+.meio-p{
+    color: var(--gray);
+}
+
+/* --------- */
+
+.meio-assista, .meio-baixe{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3%;
+    align-items:center;
+}
+
+.meio-monitor{
+    width: 100%;
+}
+
+/* --------- */
+
+.meio-oferece{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3%;
+    
+    height:500px;
+    align-items: center;
+}
+
+.meio-oferece button{
+    display:flex;
+    width:fit-content;
+    margin-left:0;
+}
+
+.meio-cards{
+    width:100%;
+}
+
+/* --------- */
+
+.meio-note{
+    width:100%;
+}
+
+/* --------- */
+
+.meio-footer, .footer{
+    text-align: center;
+}
+
+.meio-footer-aparelhos{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr;
+}
+
+.meio-footer-img{
+    width:100%;
+}
+
+/* ================================== FOOTER ================================== */
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+    margin-top:5rem;
+    padding:0rem 3rem;
+}
+
+.footer-img{
+    width:100px;
+    margin-bottom:1.5rem;
+}
+
+.footer-links-parent{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    list-style:none;
+    align-items: center;
+}
+
+.footer-links{
+    color:var(--white);
+    text-decoration: none;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+.footer-direitos{
+    text-align: center;
+    color:var(--gray);
+}
