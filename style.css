@@ -35,7 +35,6 @@ main{
 .intro{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows;
     text-align:center;
     background-image:url(https://raw.githubusercontent.com/alura-cursos/aluraplus/aula04/img/Background.png);
     background-position: top right;
