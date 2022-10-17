@@ -4,13 +4,14 @@
     --blue-background: rgba(0,3,12,255);
     --blue-button: rgba(53,124,251,255);
     --invisible: rgba(0,0,0,0);
+    --purple: rgb(93, 52, 189);
 
 }
 
 body{
     color: var(--white);
     background-color: var(--blue-background);
-    margin:0px;
+    margin:0;
 }
 
 *{  
@@ -59,10 +60,20 @@ main{
     border-radius: 8px;
 }
 
+.btn:hover{
+    background-color:var(--purple);
+}
+
 .btn2{
     background-color:var(--invisible);
     border-style: solid;
     border-width: 1px;
+}
+
+.btn2:hover{
+    background-color:var(--white);
+    color:var(--gray);
+    border-color: var(--white);
 }
 
 .intro-p{
